@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Etch-A-Sketch</title>
+    <script defer src="./main.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+   <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header>
+        <h1>Etch-A-Sketch</h1>
+    </header>    
+    <h2>Help the animals to create something new!</h2>
+    <div class="container1">
+        <div class="content">
+            <div class="button">
+                <button onclick="changeColor('pink')" class="btn btn-success">Pink</button>
+                <button onclick="changeColor('blue')" class="btn btn-success">Blue</button>
+                <button onclick="changeColor('black')" class="btn btn-success">Black</button>
+                <button onclick="changeColor('random')" class="btn btn-success">Rainbow</button>
+                <button onclick="changeColor('white')" class="btn btn-success">Eraser</button>
+            </div>
+                <div class="board"></div>
+            <div>
+                <input id="input" type="text" placeholder="Size between 2-200" value="" onchange="changeSize(this.value)">
+                <button class="btn btn-success" id="size">Set a size</button>
+                <button onclick="reset()" class="btn btn-success">Clear Board</button>
+            </div>
+
+        </div>
+          
+      </div>
+    </div>
+    <footer>Karina Grandini &copy; 2023</footer>
+</body>
+</html>
